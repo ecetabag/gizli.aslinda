@@ -9,9 +9,9 @@ $('.navbar-toggle').click(function(){
  })
 myFunction(){
  var audionameslist = `
-        audiolib/1.mp3,
-        audiolib/2.mp3,
-        audiolib/3.mp3
+        elbette.mp3,
+        gitme.mp3,
+        geber.mp3
     `;
     var audionamesarray = audionameslist.split(',');
     var audio = new Audio(audionamesarray[0]);
