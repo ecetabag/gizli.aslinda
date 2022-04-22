@@ -7,27 +7,19 @@ $('.navbar-toggle').click(function(){
     $(this).addClass('collapsed');
   }
  })
-myFunction(){
- var audionameslist = `
-        elbette.mp3,
-        gitme.mp3,
-        geber.mp3
-    `;
-    var audionamesarray = audionameslist.split(',');
-    var audio = new Audio(audionamesarray[0]);
-        
-    audio.src=audionamesarray[0];
-    audio.play();
-       
-    index=1;
-    audio.onended = function() {
-        if(index < audionamesarray.length){
-            audio.src=audionamesarray[index];
-            audio.play();
-            index++;
-        }
-    };
+
+jQuery(document).ready(function (){
+var audioArray = document.getElementsByClassName('songs');
+var i = 0;
+audioArray[i].play();
+for (i = 0; i < audioArray.length - 1; ++i) {
+    audioArray[i].addEventListener('ended', function(e){
+        var currentSong = e.target;
+        var next = $(currentSong).nextAll('audio');
+        if (next.length) $(next[0]).trigger('play');
+    });
 }
+});
  
 // Back to top Arrow
  
