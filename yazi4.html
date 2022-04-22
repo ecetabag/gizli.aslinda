@@ -173,7 +173,29 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/script.js"></script>
 	
-	
+	<script>
+		myFunction(){
+ var audionameslist = `
+        elbette.mp3,
+        gitme.mp3,
+        geber.mp3
+    `;
+    var audionamesarray = audionameslist.split(',');
+    var audio = new Audio(audionamesarray[0]);
+        
+    audio.src=audionamesarray[0];
+    audio.play();
+       
+    index=1;
+    audio.onended = function() {
+        if(index < audionamesarray.length){
+            audio.src=audionamesarray[index];
+            audio.play();
+            index++;
+        }
+    };
+}
+	</script>
 
 </body>
 </html>
