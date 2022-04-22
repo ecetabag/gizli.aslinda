@@ -80,13 +80,13 @@
 					</p>
 <audio controls preload="autoplay">
 
-  <source src="senidertetmeler.mp3" type="audio/mpeg">
+  <source  id="song-1" preload class="songs" src="senidertetmeler.mp3" type="audio/mpeg">
 </audio>
 <br><p>birden geldin aklima
 					</p>
 <audio controls preload="autoplay">
 
-  <source src="birdengeldinaklima.mp3" type="audio/mpeg">
+  <source  id="song-2" preload class="songs" src="birdengeldinaklima.mp3" type="audio/mpeg">
 </audio>
 
 		<br>
@@ -94,7 +94,7 @@
 					</p>
 <audio controls preload="autoplay">
 
-  <source src="silbastan2.mp3" type="audio/mpeg">
+  <source  id="song-3" preload class="songs" src="silbastan2.mp3" type="audio/mpeg">
 </audio>
 
 		<br>
@@ -103,7 +103,7 @@
 					</p>
 <audio controls preload="autoplay">
 
-  <source src="butunistanbulbiliyo.mp3" type="audio/mpeg">
+  <source  id="song-4" preload class="songs" src="butunistanbulbiliyo.mp3" type="audio/mpeg">
 </audio>	<br>
 <p>geber
 					</p>
@@ -173,30 +173,7 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/script.js"></script>
 	
-	<script>
-function myFunction{
- var audionameslist = `
-        elbette.mp3,
-        gitme.mp3,
-        geber.mp3
-    `;
-    var audionamesarray = audionameslist.split(',');
-    var audio = new Audio(audionamesarray[0]);
-        
-    audio.src=audionamesarray[0];
-    audio.play();
-       
-    index=1;
-    audio.onended = function() {
-        if(index < audionamesarray.length){
-            audio.src=audionamesarray[index];
-            audio.play();
-            index++;
-        }
-    };
-}
 
-	</script>
 
 </body>
 </html>
