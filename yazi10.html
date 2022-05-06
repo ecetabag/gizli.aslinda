@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="icon" href="img/3.png">
+
+    <title>yazi#10</title>
+
+    <!-- Css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+
+<style>
+	.rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+}
+</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">	
+					<span class="bar1"></span>
+					<span class="bar2"></span>
+					<span class="bar3"></span>
+			  </div>
+				<a class="navbar-brand top" href="#">
+					<img src="img/logo.png" alt="">
+				</a>
+
+			</div>
+
+			<div class="collapse navbar-collapse" id="main-menu">
+			   <ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">back</a></li>
+<!-- 				<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#brand">Brand</a></li>
+ -->			  </ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+  
+
+
+
+    <!-- Intro -->
+	<section class="intro">
+		<div class="container">
+			<div class="row">
+					<p style="text-align: center;">wrapped up: life lessons of the past 18 years</p>
+
+				</div>
+
+		</div>
+
+	</section>
+
+	
+	
+	
+	
+	<!-- About -->
+	<section class="about" id="about">
+		<div class="container about">
+			<div class="row">
+				<p style="text-align: center;"> evde oylesine cektiklerim. use headphones for better experience!!
+					<br>
+
+				<!-- <div id="rcorners1">
+					<h3 style="text-align: center;">  play all:
+					</h3>
+					<div align="center">
+
+					    <audio controls id="au" autoplay="autoplay"> 
+         <source src="senidertetmeler.mp3" type="audio/mpeg">
+          Your browser does not support this audio format. 
+      </audio> 
+    </div>
+    </div> -->
+      <script>
+var c=0;/*from w  w  w  . j a va  2s  .  c o  m*/
+var songs = ["birdengeldinaklima.mp3", "silbastan.mp3", "butunistanbulbiliyo.mp3", "geber.mp3", "elbette.mp3", "beklenengemi.mp3", "gokyuzundekikuslar.mp3", "gitme.mp3", "serseri.mp3"];
+var a=document.getElementById("au");
+a.addEventListener('ended', function(){
+  document.getElementById("au").src=songs[c];
+  a.load();
+  console.log(c);
+  c++;
+  if(c>=songs.length){
+      c=0;
+  }
+});
+
+      </script>  
+
+					</p>
+				<div class="col-md-6">
+					
+					<br>
+					<p>seni dert etmeler
+					</p>
+<audio controls preload="autoplay">
+
+  <source  id="song-1" preload class="songs" src="senidertetmeler.mp3" type="audio/mpeg">
+</audio>
+<br><p>birden geldin aklima
+					</p>
+<audio controls preload="autoplay">
+
+  <source  id="song-2" preload class="songs" src="birdengeldinaklima.mp3" type="audio/mpeg">
+</audio>
+
+		<br>
+<!-- <p>sil bastan
+					</p>
+<audio controls preload="autoplay">
+
+  <source  id="song-3" preload class="songs" src="silbastan2.mp3" type="audio/mpeg">
+</audio>
+
+		<br> -->
+
+<p>butun istanbul biliyo
+					</p>
+<audio controls preload="autoplay">
+
+  <source  id="song-4" preload class="songs" src="butunistanbulbiliyo.mp3" type="audio/mpeg">
+</audio>	<br>
+<!-- <p>geber
+					</p>
+<audio controls preload="autoplay">
+
+  <source src="geber2.mp3" type="audio/mpeg">
+</audio>	<br>
+ -->
+ <p>serseri
+					</p>
+<audio controls preload="autoplay">
+
+  <source src="serseri.mp3" type="audio/mpeg">
+</audio>
+				</div>
+				
+				<div class="col-md-6">
+			
+
+		<br>
+		<p>elbette
+					</p>
+<audio controls preload="autoplay">
+
+  <source src="elbette.mp3" type="audio/mpeg">
+</audio>	<br>
+<p>beklenen gemi
+					</p>
+<audio controls preload="autoplay">
+
+  <source src="beklenengemi.mp3" type="audio/mpeg">
+</audio>	<br>
+<p>gokyuzundeki kuslar -an original :)
+					</p>
+<audio controls preload="autoplay">
+
+  <source src="gokyuzundekuslar8d.mp3" type="audio/mpeg">
+</audio>
+<p>gitme
+					</p>
+<audio controls preload="autoplay">
+
+  <source src="gitme.mp3" type="audio/mpeg">
+</audio>	<br>
+
+
+				</div>
+	<br>
+	
+  
+
+		</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+
+					
+
+	
+	
+	<a href="#page-top" class="cd-top">Top</a>
+	
+
+    <!-- script -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/script.js"></script>
+	
+
+
+</body>
+</html>
