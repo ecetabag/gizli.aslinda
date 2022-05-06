@@ -492,10 +492,10 @@ a:hover,a:focus {
 .press p {
 	line-height:1.7em;
 }
-
+/*
 .press a:link {
 	text-decoration:underline;
-}
+}*/
 
 .press h4 {
 	padding-top:20px;
